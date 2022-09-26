@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jaime Villagran & Kelvis Martinez">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Ghipy Final</title>
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="patterns">
+        <svg>
+          <defs>
+            <pattern id="polka-dots" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+              <circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+          <text x="50%" y="60%" text-anchor="middle">Ghipy Gif</text>
+        </svg>
+      </div>
+      <section class="container__inputs">
+        <div>
+          <h1>Buscador Gif</h1>
+          <form>
+            <input type="text" class="input_buscar" />
+            <button class="btn-primario">Buscar</button>
+          </form>
+        </div>
+        <div>
+          <h2>Ultimadas Busquedas</h2>
+          <ul class="history_busqueda" id="history_busqueda"></ul>
+        </div>
+      </section>
+      <h2 class="titulo">Gif Tendencia</h2>
+      <div class="contenedor_gif" id="contenedor_gif"></div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
